@@ -1,0 +1,101 @@
+/* App.css - Paradise Nursery Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f4;
+}
+
+.landing-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+                    url('https://images.unsplash.com/photo-1470058869958-2a77ade41c02?q=80&w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.landing-content {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 650px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #a5d6a7;
+}
+
+.get-started-btn {
+  background-color: #2e7d32;
+  color: white;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #2e7d32;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  background-color: #ff5722;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.85rem;
+  position: relative;
+  top: -8px;
+  margin-left: 4px;
+}
